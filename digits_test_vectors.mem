@@ -1,0 +1,114 @@
+// Verilog Testbench 测试向量
+// 测试样本数: 10
+// 特征数: 64
+
+// 测试样本 1
+// 期望标签: 1
+query_vector = {8'h00, 8'h00, 8'hAF, 8'h9F, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hAF, 8'hEF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hAF, 8'hFF, 8'h50, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hCF, 8'hFF, 8'hAF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h20, 8'h70, 8'hFF, 8'h20, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h20, 8'hDF, 8'h60, 8'h00, 8'h00, 8'h00, 8'h00, 8'h60, 8'h9F, 8'hEF, 8'hCF, 8'h80, 8'h3B, 8'h00, 8'h00, 8'h80, 8'hFF, 8'hFF, 8'hFF, 8'hFF, 8'hBF};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 1 PASSED");
+else $display("Test 1 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 2
+// 期望标签: 3
+query_vector = {8'h00, 8'h40, 8'hCF, 8'hEF, 8'h9F, 8'h40, 8'h00, 8'h00, 8'h00, 8'h00, 8'h50, 8'h40, 8'hCF, 8'hEF, 8'h20, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hAF, 8'hFF, 8'h40, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hFF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hCF, 8'hAF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h80, 8'hCF, 8'h00, 8'h00, 8'h00, 8'h10, 8'h60, 8'h80, 8'hDF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h39, 8'hBF, 8'hDF, 8'hAF, 8'h10, 8'h00, 8'h00};
+expected_label = 3;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 2 PASSED");
+else $display("Test 2 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 3
+// 期望标签: 1
+query_vector = {8'h00, 8'h00, 8'h40, 8'h9F, 8'hBF, 8'h70, 8'h00, 8'h00, 8'h00, 8'h00, 8'h80, 8'hFF, 8'hFF, 8'hEF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h8F, 8'hFF, 8'hFF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h70, 8'hFF, 8'hFF, 8'h8F, 8'h00, 8'h00, 8'h00, 8'h00, 8'h20, 8'hDF, 8'hFF, 8'hAF, 8'h12, 8'h00, 8'h00, 8'h00, 8'h00, 8'hFF, 8'hFF, 8'hFF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h20, 8'hFF, 8'hFF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h10, 8'h8F, 8'h9F, 8'h00, 8'h00, 8'h00};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 3 PASSED");
+else $display("Test 3 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 4
+// 期望标签: 5
+query_vector = {8'h00, 8'h40, 8'hCF, 8'hFF, 8'hFF, 8'hFF, 8'hEF, 8'h22, 8'h00, 8'h80, 8'hFF, 8'hBF, 8'h80, 8'h40, 8'h10, 8'h00, 8'h00, 8'h50, 8'hFF, 8'hCF, 8'h10, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h80, 8'hFF, 8'h80, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h9F, 8'hFF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h8F, 8'hFF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h30, 8'hCF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h39, 8'hFF, 8'hFF, 8'h60, 8'h00, 8'h00, 8'h00};
+expected_label = 5;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 4 PASSED");
+else $display("Test 4 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 5
+// 期望标签: 0
+query_vector = {8'h00, 8'h00, 8'h20, 8'hDF, 8'hDF, 8'h60, 8'h00, 8'h00, 8'h00, 8'h00, 8'h9F, 8'hEF, 8'hAF, 8'hEF, 8'h20, 8'h00, 8'h00, 8'h30, 8'hFF, 8'h30, 8'h00, 8'hBF, 8'h60, 8'h00, 8'h00, 8'h33, 8'h8F, 8'h00, 8'h00, 8'h8F, 8'hAA, 8'h00, 8'h00, 8'hB6, 8'hAF, 8'h00, 8'h00, 8'h80, 8'hDB, 8'h00, 8'h00, 8'h70, 8'hFF, 8'h10, 8'h00, 8'hAF, 8'hCF, 8'h00, 8'h00, 8'h00, 8'hEF, 8'hDF, 8'hBF, 8'hEF, 8'h9F, 8'h00, 8'h00, 8'h00, 8'h30, 8'hDF, 8'hFF, 8'hCF, 8'h50, 8'h00};
+expected_label = 0;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 5 PASSED");
+else $display("Test 5 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 6
+// 期望标签: 6
+query_vector = {8'h00, 8'h00, 8'h00, 8'h9F, 8'hAF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hDF, 8'hDF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h40, 8'hFF, 8'h30, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h60, 8'hFF, 8'h9F, 8'h20, 8'h00, 8'h00, 8'h00, 8'h00, 8'hBF, 8'hFF, 8'hBF, 8'hAF, 8'h5B, 8'h00, 8'h00, 8'h00, 8'hAF, 8'h70, 8'h30, 8'h20, 8'hDF, 8'h00, 8'h00, 8'h00, 8'h60, 8'hCF, 8'h00, 8'h40, 8'hCF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h8F, 8'hFF, 8'hEF, 8'h50, 8'h00};
+expected_label = 6;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 6 PASSED");
+else $display("Test 6 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 7
+// 期望标签: 6
+query_vector = {8'h00, 8'h00, 8'h00, 8'h50, 8'hBF, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h50, 8'hFF, 8'h60, 8'h10, 8'h00, 8'h00, 8'h00, 8'h00, 8'hEF, 8'h50, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h55, 8'hCF, 8'h20, 8'h70, 8'h40, 8'h00, 8'h00, 8'h00, 8'h80, 8'hEF, 8'hFF, 8'hCF, 8'hEF, 8'h37, 8'h00, 8'h00, 8'h30, 8'hFF, 8'h8F, 8'h00, 8'h10, 8'hBF, 8'h00, 8'h00, 8'h00, 8'h9F, 8'hBF, 8'h20, 8'h60, 8'hCF, 8'h00, 8'h00, 8'h00, 8'h00, 8'h80, 8'hEF, 8'hFF, 8'h50, 8'h00};
+expected_label = 6;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 7 PASSED");
+else $display("Test 7 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 8
+// 期望标签: 7
+query_vector = {8'h00, 8'h00, 8'h80, 8'hFF, 8'hDF, 8'hEF, 8'h00, 8'h00, 8'h00, 8'h00, 8'hCF, 8'hAF, 8'hEF, 8'hAF, 8'h00, 8'h00, 8'h00, 8'h40, 8'hDF, 8'h10, 8'hCF, 8'h50, 8'h00, 8'h00, 8'h00, 8'h33, 8'h70, 8'h80, 8'hFF, 8'h40, 8'h33, 8'h00, 8'h00, 8'h00, 8'hDF, 8'hFF, 8'hFF, 8'hCF, 8'h80, 8'h00, 8'h00, 8'h00, 8'h50, 8'hCF, 8'h20, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h60, 8'h9F, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h9F, 8'h60, 8'h00, 8'h00, 8'h00, 8'h00};
+expected_label = 7;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 8 PASSED");
+else $display("Test 8 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 9
+// 期望标签: 4
+query_vector = {8'h00, 8'h00, 8'h10, 8'hDF, 8'h80, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h80, 8'hFF, 8'h40, 8'h00, 8'h00, 8'h00, 8'h00, 8'h10, 8'hFF, 8'h8F, 8'h00, 8'h10, 8'h50, 8'h00, 8'h00, 8'h88, 8'hFF, 8'h50, 8'h10, 8'hBF, 8'hFF, 8'h00, 8'h00, 8'hB6, 8'hFF, 8'hBF, 8'hAF, 8'hFF, 8'h6D, 8'h00, 8'h00, 8'h30, 8'hDF, 8'hFF, 8'hFF, 8'h80, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hAF, 8'hFF, 8'h10, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hCF, 8'hDF, 8'h00, 8'h00, 8'h00};
+expected_label = 4;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 9 PASSED");
+else $display("Test 9 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 10
+// 期望标签: 9
+query_vector = {8'h00, 8'h00, 8'h30, 8'hCF, 8'h60, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'hDF, 8'hAF, 8'hEF, 8'h80, 8'h00, 8'h00, 8'h00, 8'h00, 8'hEF, 8'h10, 8'hDF, 8'hFF, 8'h10, 8'h00, 8'h00, 8'h00, 8'hAF, 8'hCF, 8'hBF, 8'hCF, 8'h55, 8'h00, 8'h00, 8'h00, 8'h30, 8'h80, 8'h10, 8'h80, 8'hB6, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h00, 8'h8F, 8'h60, 8'h00, 8'h00, 8'h00, 8'h8F, 8'h40, 8'h30, 8'hFF, 8'h20, 8'h00, 8'h00, 8'h00, 8'h40, 8'hDF, 8'hDF, 8'h70, 8'h00, 8'h00};
+expected_label = 9;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 10 PASSED");
+else $display("Test 10 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+

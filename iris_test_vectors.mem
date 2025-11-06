@@ -1,0 +1,114 @@
+// Verilog Testbench 测试向量
+// 测试样本数: 10
+// 特征数: 4
+
+// 测试样本 1
+// 期望标签: 2
+query_vector = {8'hD4, 8'h60, 8'hE5, 8'hB5};
+expected_label = 2;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 1 PASSED");
+else $display("Test 1 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 2
+// 期望标签: 1
+query_vector = {8'h7F, 8'h60, 8'hA0, 8'h8A};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 2 PASSED");
+else $display("Test 2 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 3
+// 期望标签: 2
+query_vector = {8'h8E, 8'h55, 8'hB1, 8'h95};
+expected_label = 2;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 3 PASSED");
+else $display("Test 3 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 4
+// 期望标签: 1
+query_vector = {8'h8E, 8'h8A, 8'hA0, 8'h9F};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 4 PASSED");
+else $display("Test 4 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 5
+// 期望标签: 2
+query_vector = {8'h7F, 8'h6A, 8'hA9, 8'hB5};
+expected_label = 2;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 5 PASSED");
+else $display("Test 5 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 6
+// 期望标签: 2
+query_vector = {8'hAA, 8'h75, 8'hC7, 8'hF4};
+expected_label = 2;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 6 PASSED");
+else $display("Test 6 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 7
+// 期望标签: 1
+query_vector = {8'h55, 8'h20, 8'h82, 8'h80};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 7 PASSED");
+else $display("Test 7 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 8
+// 期望标签: 1
+query_vector = {8'h5C, 8'h35, 8'h7D, 8'h6A};
+expected_label = 1;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 8 PASSED");
+else $display("Test 8 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 9
+// 期望标签: 0
+query_vector = {8'h4E, 8'h95, 8'h1E, 8'h0B};
+expected_label = 0;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 9 PASSED");
+else $display("Test 9 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
+// 测试样本 10
+// 期望标签: 2
+query_vector = {8'hB8, 8'h75, 8'hB1, 8'hEA};
+expected_label = 2;
+#10 start = 1;
+#10 start = 0;
+wait(done);
+if (result_label == expected_label) $display("Test 10 PASSED");
+else $display("Test 10 FAILED: Expected %d, Got %d", expected_label, result_label);
+#10;
+
